@@ -114,9 +114,9 @@ if(isset($_POST['order'])){
             <span>payment method :</span>
             <select name="method" class="box" required>
                <option value="cash on delivery">cash on delivery</option>
-               <option value="credit card">credit card</option>
-               <option value="paytm">paytm</option>
-               <option value="paypal">paypal</option>
+               <option value="credit card">Credit card</option>
+               <option value="paytm">Crypto</option>
+               <option value="paypal">PayPal</option>
             </select>
          </div>
          <div class="inputBox">
@@ -137,7 +137,7 @@ if(isset($_POST['order'])){
          </div>
          <div class="inputBox">
             <span>country :</span>
-            <input type="text" name="country" placeholder="e.g. India" class="box" maxlength="50" required>
+            <input type="text" name="country" placeholder="Rīga" class="box" maxlength="50" required>
          </div>
          <div class="inputBox">
             <span>pin code :</span>
@@ -145,7 +145,7 @@ if(isset($_POST['order'])){
          </div>
       </div>
 
-      <input type="submit" name="order" class="btn <?= ($grand_total > 1)?'':'disabled'; ?>" value="place order">
+      <input type="submit" name="order" class="btn <?= ($grand_total >= 1)?'':'disabled'; ?>" value="place order">
 
    </form>
 
